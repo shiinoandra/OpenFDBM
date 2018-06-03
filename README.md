@@ -179,7 +179,7 @@ If the connection is successful the server will return JSON data with ok status
 ```
 ### Changing to Front Direction
 
-Thi command is used to change the FDBM operation mode to front mode, in this mode the FDBM will pick up the sound from the front direction
+This command is used to change the FDBM operation mode to front mode, in this mode the FDBM will pick up the sound from the front direction
 
 ```
 http://<ip address>:<port>/front
@@ -187,7 +187,7 @@ http://<ip address>:<port>/front
 
 ### Changing to Left Direction
 
-Thi command is used to change the FDBM operation mode to left mode, in this mode the FDBM will pick up the sound from the left direction
+This command is used to change the FDBM operation mode to left mode, in this mode the FDBM will pick up the sound from the left direction
 
 ```
 http://<ip address>:<port>/left
@@ -195,18 +195,40 @@ http://<ip address>:<port>/left
 
 ### Changing to Right Direction
 
-Thi command is used to change the FDBM operation mode to right mode, in this mode the FDBM will pick up the sound from the right direction
+This command is used to change the FDBM operation mode to right mode, in this mode the FDBM will pick up the sound from the right direction
 
 ```
 http://<ip address>:<port>/right
 ```
 ## Android Application
 
+We have build and android application to control the OpenFDBM system from the mobile phone.
+As for now the application is ony available for android platform. You can also find the source code for it in the "Andoid Application"  folder.
 
-## Contributing
+ The application is build using ionic framework and angularJS.
+
+If you want to directly install the application just simply download the **openfdbm.apk** and install it.
+if you want to build it yourself from the source code, there is several prerequisites that you must install prior building it. below is the list of the required application.
+
+ - NodeJS
+ - npm
+ - Ionic
+ - Cordova
 
 
-## Versioning
+
+Please refer to the below link for the guide on how to install each application as it is outside the scope of  the current article.
+
+[Installing NodeJS and npm](https://nodejs.org/en/download/package-manager)
+[Installing Ionic (and Cordova)](https://ionicframework.com/docs/v1/guide/installation.html)
+
+Once you have installed all the prerequisites , you could build the application using command below from terminal:
+```
+ionic cordova build --release android
+```
+don't forget to sign the output apk after building. For more information, please refer to the link below:
+[Publishing Ionic App](https://ionicframework.com/docs/v1/guide/publishing.html)
+
 
 
 ## Authors
@@ -219,6 +241,12 @@ Human Interface Cybernetic Computation Lab.
 Kumamoto University
 
 ## License
-
+The OpenFDBM is Licensed under Apache 2.0 License, please refer to the LICENSE.md for more information
 
 ## Acknowledgments
+
+if you use a part or the whole system in your work please cite our work below
+
+> Irwansyah, Muhammad Bagus Andra, Tsuyoshi Usagawa, "Open-Source
+> Raspberry Pi Hearing Assistance Device with Consumer Hardware, in
+> submission process, 2018)
