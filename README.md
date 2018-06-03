@@ -48,7 +48,7 @@ Below is the hardware used in this Project:
 
 The total cost of all the hardwqare used is around **72.7$ USD**.
 
-![enter image description here](https://pydio.hicc.cs.kumamoto-u.ac.jp/public/?secure_token=pnnqhfWs5UucIcy73DGLnWqTw0k6Oc7L&minisite_session=ee9e60&&action=preview_data_proxy&time_seed=1528001496&file=/assembly.png)
+![enter image description here](https://raw.githubusercontent.com/shiinoandra/OpenFDBM/master/hardwares.png)
 
 Please do note that the above hardware is not compulsory, meaning that you can replace it with alternative hardware as long as it have the same specification and/or function.
 the hardware listed above is merely a reference of the hardware that we used in the project as written in the paper.
