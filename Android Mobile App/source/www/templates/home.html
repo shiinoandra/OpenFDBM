@@ -1,0 +1,36 @@
+<ion-view title="Home" id="page2">
+  <ion-content padding="true" class="has-header">
+    <form id="home-form1" class="list">
+      <div id="home-container">
+        <h1 id="home-heading1" style="color:#387ef4;">OpenFDBM</h1>
+        <div id="home-markdown3" class="show-list-numbers-and-dots">
+          <h6 class="logo" >Directivity Configurator
+          </h6>
+        </div>
+      </div>
+      <div ng-controller="directionCtrl">
+      <div class="spacer" style="width: 300px; height: 10px;"></div>
+      <ion-toggle ng-model="switchmodel" ng-click="switch()"  toggle-class="toggle-positive" id="home-toggle1">FDBM ON/OFF</ion-toggle>
+      <!-- <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+        <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+      </div> -->
+      <label class="item item-select" >
+        <span class="input-label">Direction</span>
+        <select disabled id="dirselect" ng-options="d.id as d.label for d in directions" ng-model="selectedItem" ng-change="updateDirection()"></select>
+      </label>
+    </div>
+
+
+      <div class="row" ng-controller="directionCtrl">
+        <div style="margin:0 auto;">
+          <div id="directionPie" class=" pie tranform"></div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:-14.5em"  ng-controller="directionCtrl" >
+        <div style="margin:0 auto;">
+        <img width="120px" height="120px" src="img/headphone.png" class="img-responsive align-center center-block" alt="">
+      </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

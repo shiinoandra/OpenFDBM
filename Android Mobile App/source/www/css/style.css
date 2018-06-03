@@ -1,0 +1,81 @@
+
+.logo span {
+    color: #2ad2c9;
+}
+
+.pie {
+    width: 20em;
+    height: 20em;
+    display: block;
+    border-radius: 50%;
+    background-color: grey;
+		opacity: 0.5;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+  /* border: 2px solid green; */
+    float: left;
+
+}
+
+
+
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.front {
+  background-color: red;
+
+    background-image:
+linear-gradient(132deg, transparent 50%, white 50%),
+
+linear-gradient(47deg, white 50%, transparent 50%)
+
+}
+
+.right {
+  background-color: blue;
+
+    background-image:
+linear-gradient(207deg, transparent 50%, white 50%),
+
+linear-gradient(135deg, white 50%, transparent 50%)
+}
+
+.left {
+  background-color: green;
+
+    background-image:
+linear-gradient(-207deg, transparent 50%, white 50%),
+
+linear-gradient(-135deg, white 50%, transparent 50%)
+}
+
+.twentyfive {
+    background-image:
+        linear-gradient(180deg, transparent 50%, white 50%),
+        linear-gradient(90deg, white 50%, transparent 50%);
+}
+
+.fifty {
+    background-image:
+        linear-gradient(90deg, white 50%, transparent 50%);
+}
+
+/* Slices greater than 50% require first gradient
+   to be transparent -> green */
+
+.seventyfive {
+    background-image:
+        linear-gradient(180deg, transparent 50%),
+        linear-gradient(90deg, white 50%, transparent 50%);
+}
+
+.onehundred {
+    background-image:
+        linear-gradient(180deg, transparent 50%),
+        linear-gradient(90deg, white 50%, transparent 50%);
+}

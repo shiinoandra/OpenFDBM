@@ -48,6 +48,8 @@ Below is the hardware used in this Project:
 
 The total cost of all the hardwqare used is around **72.7$ USD**.
 
+![enter image description here](https://pydio.hicc.cs.kumamoto-u.ac.jp/public/?secure_token=pnnqhfWs5UucIcy73DGLnWqTw0k6Oc7L&minisite_session=ee9e60&&action=preview_data_proxy&time_seed=1528001496&file=/assembly.png)
+
 Please do note that the above hardware is not compulsory, meaning that you can replace it with alternative hardware as long as it have the same specification and/or function.
 the hardware listed above is merely a reference of the hardware that we used in the project as written in the paper.
 
@@ -145,34 +147,78 @@ To run the system simply use the python command to run the online_FDBM.py file
 ```
 python3 online_FDBM.py
 ```
-## Android Application
+
+when the application is running it will display a message like below:
+```
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+```
+the defauit port for the application is 5000 which you could freely change in the code.
+
+the next step is to plug into the input and output port of the andrea USB dac, the sound from the input will be then fed into the FDBM system.
+
 
 ## Web API
 
+The underlying control for the OpenFDBM is all based on http communication to the Flask server on the application. The http API allows users to create their own application and expand the application of the OpenFDBM to be more flexible.
 
+The command list for the Web API is listed below:
 
+### Checking Connection
+This command is used to check whether the server is accessible or not
+```
+http://<ip address>:<port>/test_connection
+```
+If the connection is successful the server will return JSON data with ok status
+```
+{"status": "ok"}
+```
+### Changing to Front Direction
+
+Thi command is used to change the FDBM operation mode to front mode, in this mode the FDBM will pick up the sound from the front direction
+
+```
+http://<ip address>:<port>/front
+```
+
+### Changing to Left Direction
+
+Thi command is used to change the FDBM operation mode to left mode, in this mode the FDBM will pick up the sound from the left direction
+
+```
+http://<ip address>:<port>/left
+```
+
+### Changing to Right Direction
+
+Thi command is used to change the FDBM operation mode to right mode, in this mode the FDBM will pick up the sound from the right direction
+
+```
+http://<ip address>:<port>/right
+```
+## Android Application
 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+ - Irwansyah
+ - Muhammad Bagus Andra
+ - Tsuyoshi Usagawa
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Human Interface Cybernetic Computation Lab.
+Kumamoto University
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
