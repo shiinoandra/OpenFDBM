@@ -239,6 +239,10 @@ don't forget to sign the output apk after building. For more information, please
 [Publishing Ionic App](https://ionicframework.com/docs/v1/guide/publishing.html)
 
 
+## Demo Video
+We have prepared a demonstration video that shows how the system works, you could check it at the link below:
+https://www.youtube.com/watch?v=FxcLsXWcGg0&feature=youtu.be
+
 
 ## Authors
 
@@ -246,7 +250,7 @@ don't forget to sign the output apk after building. For more information, please
  - Muhammad Bagus Andra
  - Tsuyoshi Usagawa
 
-Human Interface Cybernetic Computation Lab.
+Human Interface Cyber Communication Lab.
 Kumamoto University
 
 ## License
